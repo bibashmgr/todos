@@ -12,7 +12,7 @@ const App = () => {
 
   const [task, setTask] = useState('');
   const [items, setItems] = useState([]);
-  const [isCompleted, setIsCompleted] = useState(false);
+  const [isCompleted, setIsCompleted] = useState(true);
 
   return (
     <div className='app'>

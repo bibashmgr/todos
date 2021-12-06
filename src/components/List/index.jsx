@@ -9,8 +9,8 @@ import './index.css'
 const List = ({items, setItems, isCompleted, setIsCompleted}) => {
 
     const handleCheck = (e) => {
+        isCompleted ? document.getElementById(Number(e.target.id) + 1).className = 'completed' : document.getElementById(Number(e.target.id) + 1).className = 'incompleted';
         setIsCompleted(!isCompleted);
-        !isCompleted ? document.getElementById(Number(e.target.id) + 1).className = 'completed' : document.getElementById(Number(e.target.id) + 1).className = 'incompleted';
     }
 
     const handleDelete = (e) => {
@@ -26,7 +26,7 @@ const List = ({items, setItems, isCompleted, setIsCompleted}) => {
                 return(
                     <ItemContainer key={item.id}>
                         <Item>
-                            <ItemInput type='checkbox' className='incompleted' name='item' id={item.id} onChange={handleCheck} />
+                            <ItemInput type='checkbox' name='item' id={item.id} onClick={handleCheck} />
                             <ItemLabel htmlFor='item' id={item.id + 1} >{item.info}</ItemLabel>
                         </Item>
                         <DeleteIcon src='./images/delete.png' alt='delete' id={item.id + 2} onClick={handleDelete} />
