@@ -23,6 +23,7 @@ export const Item = styled.div`
 `
 export const ItemInput = styled.input`
     width: 1.5rem;
+    cursor: pointer;
 `
 export const ItemLabel = styled.label`
     overflow: auto;
