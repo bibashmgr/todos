@@ -4,5 +4,7 @@ A simple to-do-lister for listing the tasks you need to do for progressing towar
 
 ![TODOs](https://github.com/bibashmgr/todos/blob/master/public/images/todos.jpg)
 
+![TODOs](https://github.com/bibashmgr/todos/blob/master/public/images/todos.png)
+
 
 
